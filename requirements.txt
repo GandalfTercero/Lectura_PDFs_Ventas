@@ -1,9 +1,6 @@
-langchain==0.3.30
-langchain-core==0.3.86
-langchain-google-genai==2.1.12
-langchain-cohere==0.4.6
-pydantic==2.11.10
-pillow==11.3.0
-python-dotenv==1.1.1
-pdfplumber==0.11.7
-pandas==2.3.3
+langchain==0.3.30           # el agente (AgentExecutor, create_tool_calling_agent)
+langchain-core==0.3.86      # tools, prompts
+langchain-google-genai==2.1.12  # conexión con Gemini
+python-dotenv==1.1.1        # lee el .env
+pdfplumber==0.11.7          # extrae texto del PDF
+pandas==2.3.3               # estructura los datos
