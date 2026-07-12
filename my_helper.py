@@ -12,3 +12,4 @@ def limpiar_numero(valor: str) -> float:
         return float(valor)
     except ValueError:
         return 0.0
+    
