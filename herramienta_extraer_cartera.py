@@ -10,6 +10,7 @@ El formato del reporte es de ancho fijo pero pdfplumber a veces pega el
 NIT con el nombre del cliente (ej: "1000085253GUISAO ESCOBAR"), por eso
 se hace un pequeño arreglo de espacios antes de aplicar las expresiones
 regulares.
+
 """
 
 import re
