@@ -40,3 +40,10 @@ def resumen_general(df_clientes: pd.DataFrame) -> dict:
         "totales_por_rango": totales_por_rango(df_clientes),
         "top_5_clientes": top_clientes_por_saldo(df_clientes, 5),
     }
+
+"""
+python -c "from herramienta_extraer_cartera import extraer_cartera; 
+from herramienta_estadisticas import saldo_total, totales_por_rango, top_clientes_por_saldo; df_c, df_d = extraer_cartera('datos/reporte_cartera_erp_v2.pdf'); 
+print('Saldo total:', saldo_total(df_c)); print('Totales por rango:', totales_por_rango(df_c)); 
+print('Top 3 clientes:', top_clientes_por_saldo(df_c, 3))"
+"""
