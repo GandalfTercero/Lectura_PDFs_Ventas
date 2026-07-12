@@ -14,20 +14,23 @@ Agente conversacional que lee un reporte de cartera en PDF (formato ERP, ej. `re
 
 ```
 cartera-agente-langchain/
-├── .gitignore
-├── .env                  # tus claves reales (NO se sube, está en .gitignore)
-├── requirements.txt
-├── my_models.py           # constantes con los nombres de modelos
-├── my_keys.py             # lee las claves desde .env
-├── my_helper.py           # funciones de apoyo generales
-├── herramienta_extraer_cartera.py   # PDF -> DataFrames / CSV / JSON
-├── herramienta_estadisticas.py      # totales y resúmenes
-├── herramienta_consultas.py         # búsqueda de clientes y filtros de mora
-├── herramienta_alertas.py           # niveles de riesgo
-├── orquestador.py          # arma el agente con las tools
-├── main.py                 # punto de entrada (chat en terminal)
-├── datos/                  # PDFs de cartera a procesar
-└── salida/                 # CSV/JSON generados (no se sube, ver .gitignore)
+├── .gitignore            # (paso 1)
+├── .venv/                # (paso 2, gris/ignorado)
+├── .env                  # tus claves reales (paso 3. NO se sube, está en .gitignore)
+├── requirements.txt      # (paso 4)
+├── my_models.py           # constantes con los nombres de modelos (paso 5)
+├── my_keys.py             # lee las claves desde .env (paso 5)
+├── my_helper.py           # funciones de apoyo generales (paso 5)
+├── datos/                  # PDFs de cartera a procesar (paso 5)
+└── salida/                 # CSV/JSON generados (paso 5. No se sube, ver .gitignore)
+├── herramienta_extraer_cartera.py   # PDF -> DataFrames / CSV / JSON (paso 6)
+└── __pycache__/             (aparece solo, gris/ignorado, al correr cualquier .py)
+├── herramienta_estadisticas.py      # totales y resúmenes (paso 6)
+├── herramienta_consultas.py         # búsqueda de clientes y filtros de mora (paso 6)
+├── herramienta_alertas.py           # niveles de riesgo (paso 6)
+├── orquestador.py          # arma el agente con las tools (paso 7)
+├── main.py                 # punto de entrada (chat en terminal) (paso 7)
+
 ```
 
 ## Instalación
