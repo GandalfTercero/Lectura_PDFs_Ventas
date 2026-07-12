@@ -1,3 +1,7 @@
+"""
+Funciones de apoyo reutilizables en todo el proyecto.
+"""
+
 def limpiar_numero(valor: str) -> float:
     if valor is None:
         return 0.0
