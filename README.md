@@ -63,11 +63,40 @@ python main.py datos/reporte_cartera_erp_v2.pdf
 
 Esto abre un chat en la terminal. Ejemplos de preguntas:
 
+Resumen general (herramienta_resumen_cartera)
+
 - "Dame un resumen general de la cartera"
-- "¿Quién tiene el saldo más alto?"
-- "¿Qué clientes tienen documentos vencidos hace más de 90 días?"
-- "Dame las alertas de riesgo crítico"
+- "¿Cuál es el saldo total?"
+- "¿Cómo está distribuida la cartera por rango de mora?"
+- "¿Cuáles son los 5 clientes con mayor saldo?"
+- "¿Qué porcentaje de la cartera está al día?"
+
+Búsqueda de clientes puntuales (herramienta_buscar_cliente)
 - "Busca al cliente Cardona"
+- "¿Cuánto debe Ochoa Uribe?"
+- "Dame los documentos del cliente con NIT 1000624902"
+- "¿Qué facturas tiene pendientes Patiño Cardona?"
+- "¿Existe algún cliente llamado Restrepo?"
+
+Filtros por días de mora (herramienta_clientes_en_mora)
+- "¿Qué clientes tienen mora de más de 60 días?"
+- "¿Quién debe hace más de 180 días?"
+- "Dame los clientes vencidos a más de 30 días"
+- "¿Hay algún documento con más de 300 días de mora?"
+
+Alertas de riesgo (herramienta_alertas_riesgo)
+- "Dame las alertas críticas"
+- "¿Cuántos clientes están en mora en total?"
+- "Hazme un resumen de riesgo por nivel"
+- "¿Qué clientes debo llamar primero?"
+
+Preguntas que combinan varias tools (el agente decide cuáles usar)
+Estas son interesantes porque obligan al modelo a razonar con más de una herramienta o a interpretar los datos:
+
+- "¿Quién tiene el saldo más alto y en qué rango de mora está?"
+- "Compárame el saldo de Cardona Ruiz contra Patiño Cardona"
+- "De los clientes en mora crítica, ¿cuál debe más?"
+- "Dame un resumen ejecutivo de la cartera para presentar a mi jefe"
 
 Escribe `salir` para terminar.
 
