@@ -101,7 +101,10 @@ git push
 Gracias al `.gitignore`, `.venv/`, `.env` y los CSV/JSON generados en `salida/` nunca se suben por accidente.
 
 ## Página y URL
-En la siguiente imagen encontrarás el perfil de la página y la url:
-(Esta herramienta se hizo principalmente con el archivo base que está en la carpeta Datos)
+En la siguiente imagen encontrarás el perfil de la página.
+(Esta herramienta se hizo principalmente con el archivo base que está en la carpeta Datos).
+
+### URL:
+https://lecturapdfsventas-krcfxlnzizgsgeyqfszirl.streamlit.app/
 
 <img width="792" height="350" alt="image" src="https://github.com/user-attachments/assets/727a32f1-2dd3-4105-88ba-80af29780785" />
